@@ -76,7 +76,12 @@
                   >Foundation</span
                 >
                 <li class="nav-item">
-                  <a class="nav-link nav-link-flex d-flex gap-2" href="#"
+                  <a
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop"
+                    class="nav-link nav-link-flex d-flex gap-2"
                     ><i class="ri-window-line"></i>
                     <span class="span-sidebar1">Scorecards</span></a
                   >
@@ -116,10 +121,14 @@
                       data-bs-toggle="modal"
                       data-bs-target="#mdlSearch"
                     >
-                      <i class="ri-search-line icon-collapse1 cursor-pointer"></i>
+                      <i
+                        class="ri-search-line icon-collapse1 cursor-pointer"
+                      ></i>
                     </div>
                     <a href="profile.html"
-                      ><i class="text-white ri-settings-2-fill cursor-pointer"></i
+                      ><i
+                        class="text-white ri-settings-2-fill cursor-pointer"
+                      ></i
                     ></a>
                   </div>
                   <div class="flexcol2">
@@ -194,10 +203,10 @@
                     <hr class="text-gray-old mt-2" />
                     <div class="container d-flex justify-content-between">
                       <span class="span-content-1 mt-2"
-                        >This is the Welcome Screen for your users! It is also your
-                        personal "mission control center" for viewing your performance
-                        Alerts and staying on top of your Responsibilities, which are
-                        all listed below.</span
+                        >This is the Welcome Screen for your users! It is also
+                        your personal "mission control center" for viewing your
+                        performance Alerts and staying on top of your
+                        Responsibilities, which are all listed below.</span
                       >
                       <img
                         src="assets/img/logo/logo.png"
@@ -228,7 +237,9 @@
                       </div>
                       <div class="d-flex flex-column">
                         <div class="top">
-                          <span class="text-black fw-500">Creating Scorecards</span>
+                          <span class="text-black fw-500"
+                            >Creating Scorecards</span
+                          >
                         </div>
                         <div class="bottom">
                           <span class="text-gray fw-normal fz-13"
@@ -263,7 +274,9 @@
                       </div>
                       <div class="d-flex flex-column">
                         <div class="top">
-                          <span class="text-black fw-500">Creating Dashboards</span>
+                          <span class="text-black fw-500"
+                            >Creating Dashboards</span
+                          >
                         </div>
                         <div class="bottom">
                           <span class="text-gray fw-normal fz-13"
@@ -282,7 +295,9 @@
                 <div class="col-6">
                   <div class="bg-white borad-5 py-2">
                     <div class="container">
-                      <h3 class="text-uppercase fz-13 text-gray-old fw-600 mb-0">
+                      <h3
+                        class="text-uppercase fz-13 text-gray-old fw-600 mb-0"
+                      >
                         new alerts
                       </h3>
                     </div>
@@ -297,7 +312,9 @@
                 <div class="col-6">
                   <div class="bg-white borad-5 py-2">
                     <div class="container">
-                      <h3 class="text-uppercase fz-13 text-gray-old fw-600 mb-0">
+                      <h3
+                        class="text-uppercase fz-13 text-gray-old fw-600 mb-0"
+                      >
                         YOUR RESPONSIBILITIES
                       </h3>
                     </div>
@@ -325,13 +342,16 @@
                     >
                       <span class="fz-14 fw-500">My Tasks</span>
                       <span class="fz-12 text-gray-old"
-                        >You have <b>1 Task</b> that haven't been completed.</span
+                        >You have <b>1 Task</b> that haven't been
+                        completed.</span
                       >
                     </div>
                   </div>
                   <div class="bg-white borad-5 py-2 mt-3 mb-3">
                     <div class="container">
-                      <h3 class="text-uppercase fz-13 text-gray-old fw-600 mb-0">
+                      <h3
+                        class="text-uppercase fz-13 text-gray-old fw-600 mb-0"
+                      >
                         SPIDER IMPACT SUPPORT
                       </h3>
                     </div>
@@ -366,6 +386,7 @@
         </div>
       </div>
 
+      <!-- modal search -->
       <div
         class="modal fade"
         id="mdlSearch"
@@ -376,7 +397,10 @@
         <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content">
             <div class="modal-body p-0">
-              <div id="search" class="cursor-pointer container input-group my-3">
+              <div
+                id="search"
+                class="cursor-pointer container input-group my-3"
+              >
                 <span class="input-group-text" id="basic-addon1"
                   ><i class="ri-search-line icon-collapse1 cursor-pointer"></i
                 ></span>
@@ -427,7 +451,9 @@
                       <span class="fz-13 fw-600 text-gray-old"
                         >Key Performance Measures</span
                       >
-                      <span class="fz-13 fw-500 text-gray-old">Key Measures</span>
+                      <span class="fz-13 fw-500 text-gray-old"
+                        >Key Measures</span
+                      >
                     </div>
                   </div>
                   <div class="wrapper">
@@ -443,7 +469,9 @@
                       id="list-search"
                       class="container d-flex flex-column my-1 py-2 cursor-pointer w-100 borbot-1"
                     >
-                      <span class="fz-13 fw-600 text-gray-old">HQ Scorecard</span>
+                      <span class="fz-13 fw-600 text-gray-old"
+                        >HQ Scorecard</span
+                      >
                       <span class="fz-13 fw-500 text-gray-old"
                         >Mobileworld Inc. Example</span
                       >
@@ -464,6 +492,25 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- offcanvas choose organization -->
+      <div
+        class="offcanvas offcanvas-top"
+        tabindex="-1"
+        id="offcanvasTop"
+        aria-labelledby="offcanvasTopLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">...</div>
       </div>
     </div>
 
