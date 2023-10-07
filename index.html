@@ -14,344 +14,350 @@
     <link href="assets/icons/remixicon/remixicon.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container-fluid p-0">
-      <div class="row">
-        <!-- Sidebar Fixed 1 -->
-        <div class="col-2 px-0 fixed-left1 h-100vh" id="sidebar">
-          <div class="mt-2 d-flex flex-column justify-content-between h-100">
-            <ul class="mx-3 navbar-nav navbar-side1 fz-14">
-              <span
-                class="text-uppercase text-gray fz-12 mt-3 toggleText"
-                data-original-text="Personal"
-                >Personal</span
-              >
-              <li class="nav-item">
-                <a
-                  class="nav-link nav-link-flex d-flex gap-2 isActive"
-                  aria-current="page"
-                  href="index.html"
-                  ><i class="ri-user-line"></i>
-                  <span class="span-sidebar1">Home</span></a
+    <div class="overflow-x-hidden">
+      <div class="container-fluid p-0">
+        <div class="row">
+          <!-- Sidebar Fixed 1 -->
+          <div class="col-2 px-0 fixed-left1 h-100vh" id="sidebar">
+            <div class="mt-2 d-flex flex-column justify-content-between h-100">
+              <ul class="mx-3 navbar-nav navbar-side1 fz-14">
+                <span
+                  class="d-none d-xxl-block text-uppercase text-gray fz-12 mt-3 toggleText"
+                  data-original-text="Personal"
+                  >Personal</span
                 >
-              </li>
-              <span
-                class="text-uppercase text-gray fz-12 mt-3 toggleText"
-                data-original-text="Presentation"
-                >Presentation</span
-              >
-              <li class="nav-item">
-                <a class="nav-link nav-link-flex d-flex gap-2" href="#"
-                  ><i class="ri-book-open-line"></i>
-                  <span class="span-sidebar1">Briefings</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-flex d-flex gap-2" href="#"
-                  ><i class="ri-mind-map"></i>
-                  <span class="span-sidebar1">Strategy&nbsp;Maps</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-flex d-flex gap-2" href="#"
-                  ><i class="ri-dashboard-line"></i>
-                  <span class="span-sidebar1">Dashboards</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-flex d-flex gap-2" href="#"
-                  ><i class="ri-calculator-line"></i>
-                  <span class="span-sidebar1">Reports</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-flex d-flex gap-2" href="#"
-                  ><i class="ri-pie-chart-line"></i>
-                  <span class="span-sidebar1">Charts</span></a
-                >
-              </li>
-              <span
-                class="text-uppercase text-gray fz-12 mt-3 toggleText"
-                data-original-text="Foundation"
-                >Foundation</span
-              >
-              <li class="nav-item">
-                <a class="nav-link nav-link-flex d-flex gap-2" href="#"
-                  ><i class="ri-window-line"></i>
-                  <span class="span-sidebar1">Scorecards</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-flex d-flex gap-2" href="#"
-                  ><i class="ri-checkbox-line"></i>
-                  <span class="span-sidebar1">Initiatives</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-flex d-flex gap-2" href="#"
-                  ><i class="ri-box-3-line"></i>
-                  <span class="span-sidebar1">Datasets</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-flex d-flex gap-2" href="#"
-                  ><i class="ri-file-list-3-line"></i>
-                  <span class="span-sidebar1">Forms</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-flex d-flex gap-2" href="#"
-                  ><i class="ri-file-3-line"></i>
-                  <span class="span-sidebar1">Files</span>
-                </a>
-              </li>
-            </ul>
-            <div class="d-flex flex-column">
-              <div
-                class="mx-3 mb-4 flexcol-wrapper d-flex justify-content-between text-light"
-              >
-                <div class="flexcol d-flex gap-3">
-                  <div
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#mdlSearch"
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-link-flex d-flex gap-2 isActive"
+                    aria-current="page"
+                    href="index.html"
+                    ><i class="ri-user-line"></i>
+                    <span class="span-sidebar1">Home</span></a
                   >
-                    <i class="ri-search-line icon-collapse1 cursor-pointer"></i>
-                  </div>
-                  <a href="profile.html"
-                    ><i class="text-white ri-settings-2-fill cursor-pointer"></i
-                  ></a>
-                </div>
-                <div class="flexcol2">
-                  <i
-                    class="ri-arrow-left-s-fill cursor-pointer"
-                    id="collapseSidebar"
-                  ></i>
-                </div>
-              </div>
-              <div id="wrapper-collapseSidebar2-2" class="bg-black pb-2">
-                <i
-                  class="text-white d-flex justify-content-center ri-expand-right-line cursor-pointer ri-2x"
-                  id="collapseSidebar2-2"
-                ></i>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sidebar Fixed 2 -->
-        <div class="col-auto fixed-left2 pe-0 py-2 h-100vh" id="sidebar2">
-          <div class="d-flex flex-column mt-2 justify-content-between h-100">
-            <div class="mt-1">
-              <div class="container ms-3">
-                <h5 class="fw-semibold">Home</h5>
-              </div>
-              <ul class="navbar-nav navbar-side2 fz-14">
-                <li class="nav-item isSelected">
-                  <a class="nav-link ms-5" aria-current="page" href="#"
-                    >Welcome</a
+                </li>
+                <span
+                  class="d-none d-xxl-block text-uppercase text-gray fz-12 mt-3 toggleText"
+                  data-original-text="Presentation"
+                  >Presentation</span
+                >
+                <li class="nav-item">
+                  <a class="nav-link nav-link-flex d-flex gap-2" href="#"
+                    ><i class="ri-book-open-line"></i>
+                    <span class="span-sidebar1">Briefings</span></a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link ms-5" href="#">Alerts</a>
+                  <a class="nav-link nav-link-flex d-flex gap-2" href="#"
+                    ><i class="ri-mind-map"></i>
+                    <span class="span-sidebar1">Strategy&nbsp;Maps</span></a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link ms-5" href="#">Update KPIs</a>
+                  <a class="nav-link nav-link-flex d-flex gap-2" href="#"
+                    ><i class="ri-dashboard-line"></i>
+                    <span class="span-sidebar1">Dashboards</span></a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link ms-5" href="#">My KPIs</a>
+                  <a class="nav-link nav-link-flex d-flex gap-2" href="#"
+                    ><i class="ri-calculator-line"></i>
+                    <span class="span-sidebar1">Reports</span></a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link ms-5" href="#">My Tasks</a>
+                  <a class="nav-link nav-link-flex d-flex gap-2" href="#"
+                    ><i class="ri-pie-chart-line"></i>
+                    <span class="span-sidebar1">Charts</span></a
+                  >
+                </li>
+                <span
+                  class="d-none d-xxl-block text-uppercase text-gray fz-12 mt-3 toggleText"
+                  data-original-text="Foundation"
+                  >Foundation</span
+                >
+                <li class="nav-item">
+                  <a class="nav-link nav-link-flex d-flex gap-2" href="#"
+                    ><i class="ri-window-line"></i>
+                    <span class="span-sidebar1">Scorecards</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-flex d-flex gap-2" href="#"
+                    ><i class="ri-checkbox-line"></i>
+                    <span class="span-sidebar1">Initiatives</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-flex d-flex gap-2" href="#"
+                    ><i class="ri-box-3-line"></i>
+                    <span class="span-sidebar1">Datasets</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-flex d-flex gap-2" href="#"
+                    ><i class="ri-file-list-3-line"></i>
+                    <span class="span-sidebar1">Forms</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-flex d-flex gap-2" href="#"
+                    ><i class="ri-file-3-line"></i>
+                    <span class="span-sidebar1">Files</span>
+                  </a>
                 </li>
               </ul>
-            </div>
-            <div class="bottom">
-              <hr class="text-gray-old" />
-              <div class="bottom d-flex justify-content-end text-black mb-3">
-                <div class="right mt-auto">
+              <div class="d-flex flex-column">
+                <div
+                  class="mx-3 mb-4 flexcol-wrapper d-flex justify-content-between text-light"
+                >
+                  <div class="flexcol d-flex gap-3">
+                    <div
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#mdlSearch"
+                    >
+                      <i class="ri-search-line icon-collapse1 cursor-pointer"></i>
+                    </div>
+                    <a href="profile.html"
+                      ><i class="text-white ri-settings-2-fill cursor-pointer"></i
+                    ></a>
+                  </div>
+                  <div class="flexcol2">
+                    <i
+                      class="ri-arrow-left-s-fill cursor-pointer"
+                      id="collapseSidebar"
+                    ></i>
+                  </div>
+                </div>
+                <div id="wrapper-collapseSidebar2-2" class="bg-black pb-2">
                   <i
-                    class="ri-arrow-left-s-fill cursor-pointer"
-                    id="collapseSidebar2"
+                    class="text-white d-flex justify-content-center ri-expand-right-line cursor-pointer ri-2x"
+                    id="collapseSidebar2-2"
                   ></i>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Content -->
-        <div class="col content h-100vh mb-4">
-          <div class="mt-3 wrapper-content">
-            <div class="bg-white borad-5 py-2">
-              <div class="container">
-                <h3 class="fz-13 text-gray-old fw-600">
-                  Welcome back! Your last login was 5 Okt 2023 02.21.55
-                </h3>
-              </div>
-              <hr class="text-gray-old mt-2" />
-              <div class="container d-flex justify-content-between">
-                <span class="span-content-1 mt-2"
-                  >This is the Welcome Screen for your users! It is also your
-                  personal "mission control center" for viewing your performance
-                  Alerts and staying on top of your Responsibilities, which are
-                  all listed below.</span
-                >
-                <img
-                  src="assets/img/logo/logo.png"
-                  alt="logo"
-                  class="img-logo"
-                />
-              </div>
-              <div
-                data-id="b8a9WV4ouGg"
-                class="container you-tube-video d-flex align-items-center"
-              >
-                <div class="video-image me-2">
-                  <img
-                    src="https://img.youtube.com/vi/b8a9WV4ouGg/mqdefault.jpg"
-                    class="you-tube-thumbnail"
-                  />
-                  <svg
-                    class="icon-video-play"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="#fff"
-                  >
-                    >
-                    <path
-                      d="M19.376 12.4158L8.77735 19.4816C8.54759 19.6348 8.23715 19.5727 8.08397 19.3429C8.02922 19.2608 8 19.1643 8 19.0656V4.93408C8 4.65794 8.22386 4.43408 8.5 4.43408C8.59871 4.43408 8.69522 4.4633 8.77735 4.51806L19.376 11.5838C19.6057 11.737 19.6678 12.0474 19.5146 12.2772C19.478 12.3321 19.4309 12.3792 19.376 12.4158Z"
-                    ></path>
-                  </svg>
+          <!-- Sidebar Fixed 2 -->
+          <div class="col-auto fixed-left2 pe-0 py-2" id="sidebar2">
+            <div class="d-flex flex-column mt-2 justify-content-between h-100">
+              <div class="mt-1">
+                <div class="container ms-3">
+                  <h5 class="fw-semibold">Home</h5>
                 </div>
-                <div class="d-flex flex-column">
-                  <div class="top">
-                    <span class="text-black fw-500">Creating Scorecards</span>
-                  </div>
-                  <div class="bottom">
-                    <span class="text-gray fw-normal fz-13"
-                      >Spider Strategies
-                    </span>
-                    <span class="text-gray fw-normal fz-13"
-                      >&#8226; Youtube</span
+                <ul class="navbar-nav navbar-side2 fz-14">
+                  <li class="nav-item isSelected">
+                    <a class="nav-link ms-5" aria-current="page" href="#"
+                      >Welcome</a
                     >
-                  </div>
-                </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-5" href="#">Alerts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-5" href="#">Update KPIs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-5" href="#">My KPIs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-5" href="#">My Tasks</a>
+                  </li>
+                </ul>
               </div>
-              <div
-                data-id="b8a9WV4ouGg"
-                class="container you-tube-video d-flex align-items-center"
-              >
-                <div class="video-image me-2">
-                  <img
-                    src="https://img.youtube.com/vi/NOiE1nfdn7s/mqdefault.jpg"
-                    class="you-tube-thumbnail"
-                  />
-                  <svg
-                    class="icon-video-play"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="#fff"
-                  >
-                    >
-                    <path
-                      d="M19.376 12.4158L8.77735 19.4816C8.54759 19.6348 8.23715 19.5727 8.08397 19.3429C8.02922 19.2608 8 19.1643 8 19.0656V4.93408C8 4.65794 8.22386 4.43408 8.5 4.43408C8.59871 4.43408 8.69522 4.4633 8.77735 4.51806L19.376 11.5838C19.6057 11.737 19.6678 12.0474 19.5146 12.2772C19.478 12.3321 19.4309 12.3792 19.376 12.4158Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="d-flex flex-column">
-                  <div class="top">
-                    <span class="text-black fw-500">Creating Dashboards</span>
-                  </div>
-                  <div class="bottom">
-                    <span class="text-gray fw-normal fz-13"
-                      >Spider Strategies
-                    </span>
-                    <span class="text-gray fw-normal fz-13"
-                      >&#8226; Youtube</span
-                    >
+              <div class="bottom mb-4">
+                <hr class="text-gray-old" />
+                <div class="bottom d-flex justify-content-end text-black mb-3">
+                  <div class="right mt-auto">
+                    <i
+                      class="ri-arrow-left-s-fill cursor-pointer"
+                      id="collapseSidebar2"
+                    ></i>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row mt-3">
-              <div class="col-6">
-                <div class="bg-white borad-5 py-2">
-                  <div class="container">
-                    <h3 class="text-uppercase fz-13 text-gray-old fw-600 mb-0">
-                      new alerts
-                    </h3>
-                  </div>
-                  <hr class="text-gray-old mt-2" />
-                  <div class="container d-flex justify-content-center py-3">
-                    <span class="span-content-1 mt-2 text-gray-old"
-                      >No New Alerts.</span
+          </div>
+
+          <!-- Content -->
+          <div class="col content me-2 mb-4">
+            <div class="mt-3">
+              <div class="row">
+                <div class="col-12">
+                  <div class="bg-white borad-5 py-2">
+                    <div class="container ms-0">
+                      <h3 class="fz-13 text-gray-old fw-600">
+                        Welcome back! Your last login was 5 Okt 2023 02.21.55
+                      </h3>
+                    </div>
+                    <hr class="text-gray-old mt-2" />
+                    <div class="container d-flex justify-content-between">
+                      <span class="span-content-1 mt-2"
+                        >This is the Welcome Screen for your users! It is also your
+                        personal "mission control center" for viewing your performance
+                        Alerts and staying on top of your Responsibilities, which are
+                        all listed below.</span
+                      >
+                      <img
+                        src="assets/img/logo/logo.png"
+                        alt="logo"
+                        class="img-logo"
+                      />
+                    </div>
+                    <div
+                      data-id="b8a9WV4ouGg"
+                      class="container you-tube-video d-flex align-items-center"
                     >
+                      <div class="video-image me-2">
+                        <img
+                          src="https://img.youtube.com/vi/b8a9WV4ouGg/mqdefault.jpg"
+                          class="you-tube-thumbnail"
+                        />
+                        <svg
+                          class="icon-video-play"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="#fff"
+                        >
+                          >
+                          <path
+                            d="M19.376 12.4158L8.77735 19.4816C8.54759 19.6348 8.23715 19.5727 8.08397 19.3429C8.02922 19.2608 8 19.1643 8 19.0656V4.93408C8 4.65794 8.22386 4.43408 8.5 4.43408C8.59871 4.43408 8.69522 4.4633 8.77735 4.51806L19.376 11.5838C19.6057 11.737 19.6678 12.0474 19.5146 12.2772C19.478 12.3321 19.4309 12.3792 19.376 12.4158Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div class="top">
+                          <span class="text-black fw-500">Creating Scorecards</span>
+                        </div>
+                        <div class="bottom">
+                          <span class="text-gray fw-normal fz-13"
+                            >Spider Strategies
+                          </span>
+                          <span class="text-gray fw-normal fz-13"
+                            >&#8226; Youtube</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      data-id="b8a9WV4ouGg"
+                      class="container you-tube-video d-flex align-items-center"
+                    >
+                      <div class="video-image me-2">
+                        <img
+                          src="https://img.youtube.com/vi/NOiE1nfdn7s/mqdefault.jpg"
+                          class="you-tube-thumbnail"
+                        />
+                        <svg
+                          class="icon-video-play"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="#fff"
+                        >
+                          >
+                          <path
+                            d="M19.376 12.4158L8.77735 19.4816C8.54759 19.6348 8.23715 19.5727 8.08397 19.3429C8.02922 19.2608 8 19.1643 8 19.0656V4.93408C8 4.65794 8.22386 4.43408 8.5 4.43408C8.59871 4.43408 8.69522 4.4633 8.77735 4.51806L19.376 11.5838C19.6057 11.737 19.6678 12.0474 19.5146 12.2772C19.478 12.3321 19.4309 12.3792 19.376 12.4158Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div class="top">
+                          <span class="text-black fw-500">Creating Dashboards</span>
+                        </div>
+                        <div class="bottom">
+                          <span class="text-gray fw-normal fz-13"
+                            >Spider Strategies
+                          </span>
+                          <span class="text-gray fw-normal fz-13"
+                            >&#8226; Youtube</span
+                          >
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-6">
-                <div class="bg-white borad-5 py-2">
-                  <div class="container">
-                    <h3 class="text-uppercase fz-13 text-gray-old fw-600 mb-0">
-                      YOUR RESPONSIBILITIES
-                    </h3>
-                  </div>
-                  <hr class="text-gray-old mt-2" />
-                  <div
-                    class="container d-flex flex-column justify-content-start"
-                  >
-                    <span class="fz-14 fw-500">Update KPIs</span>
-                    <span class="fz-12 text-gray-old"
-                      >You update <b>0 KPIs.</b></span
-                    >
-                  </div>
-                  <hr class="text-gray-old mt-2" />
-                  <div
-                    class="container d-flex flex-column justify-content-start"
-                  >
-                    <span class="fz-14 fw-500">My KPIs</span>
-                    <span class="fz-12 text-gray-old"
-                      >You own <b>7 KPIs.</b></span
-                    >
-                  </div>
-                  <hr class="text-gray-old mt-2" />
-                  <div
-                    class="container d-flex flex-column justify-content-start"
-                  >
-                    <span class="fz-14 fw-500">My Tasks</span>
-                    <span class="fz-12 text-gray-old"
-                      >You have <b>1 Task</b> that haven't been completed.</span
-                    >
+              <div class="row mt-3">
+                <div class="col-6">
+                  <div class="bg-white borad-5 py-2">
+                    <div class="container">
+                      <h3 class="text-uppercase fz-13 text-gray-old fw-600 mb-0">
+                        new alerts
+                      </h3>
+                    </div>
+                    <hr class="text-gray-old mt-2" />
+                    <div class="container d-flex justify-content-center py-3">
+                      <span class="span-content-1 mt-2 text-gray-old"
+                        >No New Alerts.</span
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="bg-white borad-5 py-2 mt-3 mb-3">
-                  <div class="container">
-                    <h3 class="text-uppercase fz-13 text-gray-old fw-600 mb-0">
-                      SPIDER IMPACT SUPPORT
-                    </h3>
-                  </div>
-                  <hr class="text-gray-old mt-2" />
-                  <div class="container">
-                    <div
-                      class="d-flex align-items-start justify-content-start gap-2"
-                    >
-                      <img
-                        src="assets/img/logo/logo-small.svg"
-                        alt="svg logo"
-                        class="img-logo-small"
-                      />
-                      <div class="right d-flex flex-column">
-                        <span class="fz-14 fw-500">We're here to help</span>
-                        <span class="fz-12 text-gray-old"
-                          >Please let us know if you have any questions.</span
-                        >
-                      </div>
+                <div class="col-6">
+                  <div class="bg-white borad-5 py-2">
+                    <div class="container">
+                      <h3 class="text-uppercase fz-13 text-gray-old fw-600 mb-0">
+                        YOUR RESPONSIBILITIES
+                      </h3>
                     </div>
-                    <button
-                      class="btn btn-outline-info text-dark w-100 my-3 fz-14"
+                    <hr class="text-gray-old mt-2" />
+                    <div
+                      class="container d-flex flex-column justify-content-start"
                     >
-                      Contact Us
-                    </button>
+                      <span class="fz-14 fw-500">Update KPIs</span>
+                      <span class="fz-12 text-gray-old"
+                        >You update <b>0 KPIs.</b></span
+                      >
+                    </div>
+                    <hr class="text-gray-old mt-2" />
+                    <div
+                      class="container d-flex flex-column justify-content-start"
+                    >
+                      <span class="fz-14 fw-500">My KPIs</span>
+                      <span class="fz-12 text-gray-old"
+                        >You own <b>7 KPIs.</b></span
+                      >
+                    </div>
+                    <hr class="text-gray-old mt-2" />
+                    <div
+                      class="container d-flex flex-column justify-content-start"
+                    >
+                      <span class="fz-14 fw-500">My Tasks</span>
+                      <span class="fz-12 text-gray-old"
+                        >You have <b>1 Task</b> that haven't been completed.</span
+                      >
+                    </div>
+                  </div>
+                  <div class="bg-white borad-5 py-2 mt-3 mb-3">
+                    <div class="container">
+                      <h3 class="text-uppercase fz-13 text-gray-old fw-600 mb-0">
+                        SPIDER IMPACT SUPPORT
+                      </h3>
+                    </div>
+                    <hr class="text-gray-old mt-2" />
+                    <div class="container">
+                      <div
+                        class="d-flex align-items-start justify-content-start gap-2"
+                      >
+                        <img
+                          src="assets/img/logo/logo-small.svg"
+                          alt="svg logo"
+                          class="img-logo-small"
+                        />
+                        <div class="right d-flex flex-column">
+                          <span class="fz-14 fw-500">We're here to help</span>
+                          <span class="fz-12 text-gray-old"
+                            >Please let us know if you have any questions.</span
+                          >
+                        </div>
+                      </div>
+                      <button
+                        class="btn btn-outline-info text-dark w-100 my-3 fz-14"
+                      >
+                        Contact Us
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -359,101 +365,101 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div
-      class="modal fade"
-      id="mdlSearch"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-body p-0">
-            <div id="search" class="cursor-pointer container input-group my-3">
-              <span class="input-group-text" id="basic-addon1"
-                ><i class="ri-search-line icon-collapse1 cursor-pointer"></i
-              ></span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Search"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-            <div id="content-search" style="display: none">
-              <div class="d-flex flex-column">
-                <div class="wrapper">
-                  <div
-                    class="bg-title container d-flex align-items-center gap-1 borbot-1"
-                  >
-                    <i class="ri-window-line"></i>
-                    <span class="text-gray-old fz-11 fw-600 text-uppercase"
-                      >scorecards (6)</span
+      <div
+        class="modal fade"
+        id="mdlSearch"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <div id="search" class="cursor-pointer container input-group my-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="ri-search-line icon-collapse1 cursor-pointer"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div id="content-search" style="display: none">
+                <div class="d-flex flex-column">
+                  <div class="wrapper">
+                    <div
+                      class="bg-title container d-flex align-items-center gap-1 borbot-1"
                     >
+                      <i class="ri-window-line"></i>
+                      <span class="text-gray-old fz-11 fw-600 text-uppercase"
+                        >scorecards (6)</span
+                      >
+                    </div>
+                    <div
+                      id="list-search"
+                      class="container d-flex flex-column my-1 py-2 cursor-pointer w-100 borbot-1"
+                    >
+                      <span class="fz-13 fw-600 text-gray-old"
+                        >Mobileworld Balanced Scorecard</span
+                      >
+                      <span class="fz-13 fw-500 text-gray-old"
+                        >Mobileworld Inc. Example</span
+                      >
+                    </div>
+                    <div
+                      id="list-search"
+                      class="container d-flex flex-column my-1 py-2 cursor-pointer w-100 borbot-1"
+                    >
+                      <span class="fz-13 fw-600 text-gray-old"
+                        >Scoring Types Scorecard</span
+                      >
+                      <span class="fz-13 fw-500 text-gray-old"
+                        >Scoring Types</span
+                      >
+                    </div>
+                    <div
+                      id="list-search"
+                      class="container d-flex flex-column my-1 py-2 cursor-pointer w-100 borbot-1"
+                    >
+                      <span class="fz-13 fw-600 text-gray-old"
+                        >Key Performance Measures</span
+                      >
+                      <span class="fz-13 fw-500 text-gray-old">Key Measures</span>
+                    </div>
                   </div>
-                  <div
-                    id="list-search"
-                    class="container d-flex flex-column my-1 py-2 cursor-pointer w-100 borbot-1"
-                  >
-                    <span class="fz-13 fw-600 text-gray-old"
-                      >Mobileworld Balanced Scorecard</span
+                  <div class="wrapper">
+                    <div
+                      class="bg-title container d-flex align-items-center gap-1 borbot-1"
                     >
-                    <span class="fz-13 fw-500 text-gray-old"
-                      >Mobileworld Inc. Example</span
+                      <i class="ri-window-line"></i>
+                      <span class="text-gray-old fz-11 fw-600 text-uppercase"
+                        >reports (1)</span
+                      >
+                    </div>
+                    <div
+                      id="list-search"
+                      class="container d-flex flex-column my-1 py-2 cursor-pointer w-100 borbot-1"
                     >
-                  </div>
-                  <div
-                    id="list-search"
-                    class="container d-flex flex-column my-1 py-2 cursor-pointer w-100 borbot-1"
-                  >
-                    <span class="fz-13 fw-600 text-gray-old"
-                      >Scoring Types Scorecard</span
-                    >
-                    <span class="fz-13 fw-500 text-gray-old"
-                      >Scoring Types</span
-                    >
-                  </div>
-                  <div
-                    id="list-search"
-                    class="container d-flex flex-column my-1 py-2 cursor-pointer w-100 borbot-1"
-                  >
-                    <span class="fz-13 fw-600 text-gray-old"
-                      >Key Performance Measures</span
-                    >
-                    <span class="fz-13 fw-500 text-gray-old">Key Measures</span>
-                  </div>
-                </div>
-                <div class="wrapper">
-                  <div
-                    class="bg-title container d-flex align-items-center gap-1 borbot-1"
-                  >
-                    <i class="ri-window-line"></i>
-                    <span class="text-gray-old fz-11 fw-600 text-uppercase"
-                      >reports (1)</span
-                    >
-                  </div>
-                  <div
-                    id="list-search"
-                    class="container d-flex flex-column my-1 py-2 cursor-pointer w-100 borbot-1"
-                  >
-                    <span class="fz-13 fw-600 text-gray-old">HQ Scorecard</span>
-                    <span class="fz-13 fw-500 text-gray-old"
-                      >Mobileworld Inc. Example</span
-                    >
+                      <span class="fz-13 fw-600 text-gray-old">HQ Scorecard</span>
+                      <span class="fz-13 fw-500 text-gray-old"
+                        >Mobileworld Inc. Example</span
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="span-bottom-search" class="foot" style="display: none">
-              <div
-                class="bg-title container d-flex align-items-center py-1 gap-1 borbot-1"
-              >
-                <span class="text-gray-old fz-11 fw-600"
-                  ><i class="ri-more-line"></i> Keep typing for better
-                  matches</span
+              <div id="span-bottom-search" class="foot" style="display: none">
+                <div
+                  class="bg-title container d-flex align-items-center py-1 gap-1 borbot-1"
                 >
+                  <span class="text-gray-old fz-11 fw-600"
+                    ><i class="ri-more-line"></i> Keep typing for better
+                    matches</span
+                  >
+                </div>
               </div>
             </div>
           </div>
